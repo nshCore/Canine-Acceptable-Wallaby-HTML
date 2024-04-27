@@ -563,6 +563,7 @@
   font-size: 24px;
   font-style: normal;
   margin-top: var(--dl-space-space-twounits);
+  text-align: center;
   transition: 0.3s;
   font-weight: 600;
   padding-top: var(--dl-space-space-twounits);
@@ -608,7 +609,6 @@
   color: var(--dl-color-gray-white);
   font-style: normal;
   font-weight: 600;
-  text-decoration: underline;
 }
 .home-text39 {
   color: var(--dl-color-gray-white);
