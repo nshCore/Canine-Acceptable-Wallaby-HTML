@@ -77,7 +77,7 @@
 
 
 
-@media(max-width: 479px) {
+@media(max-width: 380px) {
   .gallery-card3-text {
     align-self: center;
     margin-bottom: var(--dl-space-space-unit);

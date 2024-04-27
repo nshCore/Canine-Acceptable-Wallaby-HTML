@@ -91,7 +91,12 @@
     margin-top: var(--dl-space-space-twounits);
   }
 }
-@media(max-width: 479px) {
+@media(max-width: 380px) {
+  .blog-post-card2-image {
+    width: 100%;
+    height: auto;
+    align-self: stretch;
+  }
   .blog-post-card2-container {
     align-self: center;
   }
