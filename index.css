@@ -38,6 +38,7 @@
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.25rem;
+  line-height: 1.25;
   margin-bottom: var(--dl-space-space-twounits);
 }
 
@@ -170,10 +171,6 @@
   color: var(--dl-color-gray-white);
   font-size: 1.25rem;
 }
-.home-text02 {
-  color: var(--dl-color-gray-white);
-  font-size: 1.25rem;
-}
 .home-container02 {
   flex: 0 0 auto;
   height: 100px;
@@ -182,7 +179,7 @@
   align-items: center;
   justify-content: center;
 }
-.home-text05 {
+.home-text04 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 3rem;
@@ -218,7 +215,7 @@
   align-items: center;
   flex-direction: column;
 }
-.home-text06 {
+.home-text05 {
   fill: #00f0c5;
   color: #00f0c5;
   font-size: 4rem;
@@ -227,13 +224,13 @@
   font-weight: 900;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-text08 {
+.home-text07 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.5rem;
   font-weight: 500;
 }
-.home-text09 {
+.home-text08 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.25rem;
@@ -241,7 +238,7 @@
   margin-top: var(--dl-space-space-oneandhalfunits);
   text-align: center;
 }
-.home-text10 {
+.home-text09 {
   font-size: 1.15rem;
 }
 .home-container05 {
@@ -257,7 +254,7 @@
   align-items: center;
   flex-direction: column;
 }
-.home-text12 {
+.home-text11 {
   fill: #00f0c5;
   color: #00f0c5;
   font-size: 4rem;
@@ -266,13 +263,13 @@
   font-weight: 900;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-text13 {
+.home-text12 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.5rem;
   font-weight: 500;
 }
-.home-text14 {
+.home-text13 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.15rem;
@@ -292,7 +289,7 @@
   align-items: center;
   flex-direction: column;
 }
-.home-text17 {
+.home-text16 {
   fill: #00f0c5;
   color: #00f0c5;
   font-size: 4rem;
@@ -301,13 +298,13 @@
   font-weight: 900;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-text18 {
+.home-text17 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.5rem;
   font-weight: 500;
 }
-.home-text19 {
+.home-text18 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.15rem;
@@ -327,7 +324,7 @@
   align-items: center;
   flex-direction: column;
 }
-.home-text22 {
+.home-text21 {
   fill: #00f0c5;
   color: #00f0c5;
   font-size: 4rem;
@@ -336,20 +333,20 @@
   font-weight: 900;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.home-text23 {
+.home-text22 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.5rem;
   font-weight: 500;
 }
-.home-text24 {
+.home-text23 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 0.75rem;
   margin-top: var(--dl-space-space-oneandhalfunits);
   text-align: center;
 }
-.home-text25 {
+.home-text24 {
   font-size: 1.15rem;
 }
 .home-portfolio-container {
@@ -453,13 +450,13 @@
   padding-bottom: var(--dl-space-space-unit);
   text-transform: capitalize;
 }
+.home-text26 {
+  font-size: 2.5rem;
+}
 .home-text27 {
   font-size: 2.5rem;
 }
 .home-text28 {
-  font-size: 2.5rem;
-}
-.home-text29 {
   font-size: 1.15rem;
 }
 .home-newsletter-form {
@@ -553,7 +550,7 @@
   justify-content: space-between;
   background-color: #232323;
 }
-.home-text30 {
+.home-text29 {
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   align-self: stretch;
@@ -589,16 +586,22 @@
   padding-bottom: var(--dl-space-space-fourunits);
   justify-content: space-between;
 }
-.home-text36 {
+.home-text35 {
   width: 100%;
   font-size: 18px;
   text-align: center;
+}
+.home-text36 {
+  color: var(--dl-color-gray-white);
+  font-style: normal;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: underline;
 }
 .home-text37 {
   color: var(--dl-color-gray-white);
   font-style: normal;
   font-weight: 600;
-  text-transform: capitalize;
   text-decoration: underline;
 }
 .home-text38 {
@@ -609,25 +612,19 @@
 }
 .home-text39 {
   color: var(--dl-color-gray-white);
-  font-style: normal;
-  font-weight: 600;
-  text-decoration: underline;
 }
 .home-text40 {
   color: var(--dl-color-gray-white);
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: underline;
 }
 .home-text41 {
   color: var(--dl-color-gray-white);
   font-style: normal;
   font-weight: 600;
-  text-decoration: underline;
 }
 .home-text42 {
-  color: var(--dl-color-gray-white);
-  font-style: normal;
-  font-weight: 600;
-}
-.home-text43 {
   color: var(--dl-color-gray-white);
 }
 @media(max-width: 1600px) {
@@ -642,10 +639,16 @@
     padding-top: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-unit);
   }
-  .home-text36 {
+  .home-text35 {
     margin: 0px;
     padding: 0px;
     line-height: 1.5;
+  }
+  .home-text36 {
+    color: var(--dl-color-gray-white);
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: underline;
   }
   .home-text37 {
     color: var(--dl-color-gray-white);
@@ -661,25 +664,19 @@
   }
   .home-text39 {
     color: var(--dl-color-gray-white);
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: underline;
   }
   .home-text40 {
     color: var(--dl-color-gray-white);
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: underline;
   }
   .home-text41 {
     color: var(--dl-color-gray-white);
     font-style: normal;
     font-weight: 600;
-    text-decoration: underline;
   }
   .home-text42 {
-    color: var(--dl-color-gray-white);
-    font-style: normal;
-    font-weight: 600;
-  }
-  .home-text43 {
     color: var(--dl-color-gray-white);
   }
 }
@@ -691,7 +688,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .home-text24 {
+  .home-text23 {
     color: var(--dl-color-gray-white);
     font-size: 0.75rem;
   }
@@ -710,7 +707,7 @@
   .home-mission-statment-blurb {
     max-width: 100%;
   }
-  .home-text05 {
+  .home-text04 {
     text-align: center;
   }
   .home-steps {
@@ -729,34 +726,34 @@
   .home-container04 {
     align-self: flex-start;
   }
-  .home-text06 {
+  .home-text05 {
     text-align: center;
   }
-  .home-text08 {
+  .home-text07 {
+    text-align: center;
+  }
+  .home-text11 {
     text-align: center;
   }
   .home-text12 {
     text-align: center;
   }
-  .home-text13 {
+  .home-text16 {
     text-align: center;
   }
   .home-text17 {
     text-align: center;
   }
-  .home-text18 {
+  .home-text21 {
     text-align: center;
   }
   .home-text22 {
     text-align: center;
   }
-  .home-text23 {
-    text-align: center;
-  }
   .home-container08 {
     flex-direction: column;
   }
-  .home-text30 {
+  .home-text29 {
     text-align: center;
   }
 }
@@ -819,7 +816,7 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-unit);
   }
-  .home-text36 {
+  .home-text35 {
     margin: 0px;
     align-self: stretch;
     text-align: center;
@@ -827,6 +824,14 @@
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
+  }
+  .home-text36 {
+    color: var(--dl-color-gray-white);
+    font-size: 15px;
+    font-style: inherit;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: underline;
   }
   .home-text37 {
     color: var(--dl-color-gray-white);
@@ -842,7 +847,7 @@
     font-style: inherit;
     font-weight: 400;
     text-transform: capitalize;
-    text-decoration: underline;
+    text-decoration: inherit;
   }
   .home-text39 {
     color: var(--dl-color-gray-white);
@@ -850,7 +855,6 @@
     font-style: inherit;
     font-weight: 400;
     text-transform: capitalize;
-    text-decoration: inherit;
   }
   .home-text40 {
     color: var(--dl-color-gray-white);
@@ -858,6 +862,7 @@
     font-style: inherit;
     font-weight: 400;
     text-transform: capitalize;
+    text-decoration: underline;
   }
   .home-text41 {
     color: var(--dl-color-gray-white);
@@ -865,16 +870,8 @@
     font-style: inherit;
     font-weight: 400;
     text-transform: capitalize;
-    text-decoration: underline;
   }
   .home-text42 {
-    color: var(--dl-color-gray-white);
-    font-size: 15px;
-    font-style: inherit;
-    font-weight: 400;
-    text-transform: capitalize;
-  }
-  .home-text43 {
     color: var(--dl-color-gray-white);
     font-size: 15px;
     font-style: inherit;
@@ -965,28 +962,28 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .home-text30 {
+  .home-text29 {
     color: var(--dl-color-gray-white);
     font-size: 1.15rem;
     line-height: 1.25;
+  }
+  .home-text30 {
+    font-size: 1.5rem;
+    line-height: 2;
   }
   .home-text31 {
     font-size: 1.5rem;
     line-height: 2;
   }
   .home-text32 {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     line-height: 2;
   }
   .home-text33 {
-    font-size: 1.15rem;
-    line-height: 2;
-  }
-  .home-text34 {
     color: var(--dl-color-gray-white);
     font-size: 1.15rem;
   }
-  .home-text35 {
+  .home-text34 {
     font-size: 1.15rem;
     font-family: Inter;
     font-weight: 700;
@@ -1003,10 +1000,16 @@
     padding: var(--dl-space-space-unit);
     flex-direction: column;
   }
-  .home-text36 {
+  .home-text35 {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-unit);
+  }
+  .home-text36 {
+    color: var(--dl-color-gray-white);
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: underline;
   }
   .home-text37 {
     color: var(--dl-color-gray-white);
@@ -1022,25 +1025,19 @@
   }
   .home-text39 {
     color: var(--dl-color-gray-white);
-    font-style: normal;
-    font-weight: 600;
-    text-decoration: underline;
   }
   .home-text40 {
     color: var(--dl-color-gray-white);
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: underline;
   }
   .home-text41 {
     color: var(--dl-color-gray-white);
     font-style: normal;
     font-weight: 600;
-    text-decoration: underline;
   }
   .home-text42 {
-    color: var(--dl-color-gray-white);
-    font-style: normal;
-    font-weight: 600;
-  }
-  .home-text43 {
     color: var(--dl-color-gray-white);
   }
 }

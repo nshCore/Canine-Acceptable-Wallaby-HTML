@@ -38,6 +38,7 @@
   fill: var(--dl-color-gray-white);
   color: var(--dl-color-gray-white);
   font-size: 1.25rem;
+  line-height: 1.25;
   margin-bottom: var(--dl-space-space-twounits);
 }
 
