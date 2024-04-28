@@ -369,57 +369,7 @@
 
 
       	}catch(e){}
-      })();</script
-    ><script type="text/javascript">
-      	document.addEventListener("DOMContentLoaded", function() {
-          // Define your Zoho Campaigns API endpoint
-          var apiUrl = "https://campaigns.zoho.com/api/v1/addSubscriber";
-
-          // Define your Zoho Campaigns API key
-          var apiKey = " 9e65ff7f51d5b3184f07c1b60111cd46";
-
-          // Function to register email address
-          function registerEmail(email) {
-              // Data to be sent with the POST request
-              var data = {
-                  "list_key": "3z312d986d8fdf509f9f07e7870b8b8695a7143b7b63f1704c451a283f13134f2f", // Replace LIST_KEY with the key of your Zoho Campaigns list
-                  "data": {
-                      "Email": email // You can include additional fields here if needed
-                  }
-              };
-
-              // Make a POST request to Zoho Campaigns API
-              var xhr = new XMLHttpRequest();
-              xhr.open("POST", apiUrl);
-              xhr.setRequestHeader("Authorization", "apikey " + apiKey);
-              xhr.setRequestHeader("Content-Type", "application/json");
-              xhr.onload = function() {
-                  if (xhr.status === 200) {
-                      console.log("Email registered successfully:", xhr.responseText);
-                  } else {
-                      console.error("Error registering email:", xhr.status, xhr.statusText);
-                  }
-              };
-              xhr.onerror = function() {
-                  console.error("Error registering email:", xhr.status, xhr.statusText);
-              };
-              xhr.send(JSON.stringify(data));
-          }
-
-          // Handle button click event
-          document.getElementById("newsletter-input-button").addEventListener("click", function() {
-              // Get the email address from the input box
-              var email = document.getElementById("newsletter-input").value;
-
-              // Check if email is not empty
-              if (email.trim() !== "") {
-                  // Register the email address
-                  registerEmail(email);
-              } else {
-                  console.error("Email address cannot be empty.");
-              }
-          });
-      });
+      })();
     </script></body
   ></html
 >

@@ -426,7 +426,7 @@
 .home-newsletter-container {
   width: auto;
   height: auto;
-  display: flex;
+  display: none;
   margin-top: var(--dl-space-space-twounits);
   align-items: flex-start;
   margin-left: 0px;
