@@ -426,7 +426,7 @@
 .home-newsletter-container {
   width: auto;
   height: auto;
-  display: none;
+  display: flex;
   margin-top: var(--dl-space-space-twounits);
   align-items: flex-start;
   margin-left: 0px;
@@ -471,16 +471,27 @@
   color: var(--dl-color-gray-500);
   width: 30%;
   padding: 1rem;
+  transition: 0.3s;
+}
+.home-newsletter-form-email-input:focus {
+  border-color: rgba(0,0,0,0,0.0);
+  border-style: none;
 }
 .home-newsletter-form-submit-button {
   fill: var(--dl-color-gray-500);
   color: var(--dl-color-gray-500);
   width: 15%;
+  transition: 0.3s;
   padding-top: 1rem;
   padding-left: var(--dl-space-space-twounits);
   padding-right: var(--dl-space-space-twounits);
   padding-bottom: 1rem;
-  background-color: #00f0c5;
+  background-color: rgb(0, 240, 197);
+}
+.home-newsletter-form-submit-button:hover {
+  fill: var(--dl-color-gray-900);
+  color: var(--dl-color-gray-900);
+  background-color: var(--dl-color-success-300);
 }
 .home-portfolio-container1 {
   width: 100%;

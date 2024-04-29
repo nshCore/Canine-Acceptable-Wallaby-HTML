@@ -434,16 +434,22 @@
             ><br class="home-text27" /><span class="home-text28"
               >Subscribe to Nublock Venture Labs Newsletter!</span
             ></span
-          ><form class="home-newsletter-form"
+          ><form
+            id="newsletter-form-container"
+            action="https://campaigns.zoho.com/api/v1/addSubscriber"
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+            class="home-newsletter-form"
             ><input
-              type="Your Email"
+              type="email"
               id="newsletter-input"
+              name="newsletter-email"
+              required="true"
               placeholder="Your Email"
               class="home-newsletter-form-email-input input"
             /><button
               id="newsletter-input-button"
               type="submit"
-              autofocus="true"
               class="home-newsletter-form-submit-button button"
               >Register</button
             ></form
@@ -634,6 +640,52 @@
             ><br /></span></footer></div
     ></div>
     <script type="text/javascript">
+       var apiUrl = "https://campaigns.zoho.com/api/v1/addSubscriber";
+
+          // Define your Zoho Campaigns API key
+          var apiKey = "YOUR_API_KEY";
+
+          // Function to register email address
+          function registerEmail(email) {
+              // Data to be sent with the POST request
+              var data = {
+                  "list_key": "LIST_KEY", // Replace LIST_KEY with the key of your Zoho Campaigns list
+                  "data": {
+                      "Email": email // You can include additional fields here if needed
+                  }
+              };
+
+              // Make a POST request to Zoho Campaigns API
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", apiUrl);
+              xhr.setRequestHeader("Authorization", "apikey " + apiKey);
+              xhr.setRequestHeader("Content-Type", "application/json");
+              xhr.onload = function() {
+                  if (xhr.status === 200) {
+                      console.log("Email registered successfully:", xhr.responseText);
+                  } else {
+                      console.error("Error registering email:", xhr.status, xhr.statusText);
+                  }
+              };
+              xhr.onerror = function() {
+                  console.error("Error registering email:", xhr.status, xhr.statusText);
+              };
+              xhr.send(JSON.stringify(data));
+          }
+
+          // Handle button click event
+          document.getElementById("newsletter-input-button").addEventListener("click", function() {
+              // Get the email address from the input box
+              var email = document.getElementById("newsletter-input").value;
+
+              // Check if email is not empty
+              if (email.trim() !== "") {
+                  // Register the email address
+                  registerEmail(email);
+              } else {
+                  console.error("Email address cannot be empty.");
+              }
+          });
       (function() {
       	try{
 
@@ -803,6 +855,57 @@
 
       	}catch(e){}
       })();
+
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Define your Zoho Campaigns API endpoint
+          var apiUrl = "https://campaigns.zoho.com/api/v1/addSubscriber";
+
+          // Define your Zoho Campaigns API key
+          var apiKey = "YOUR_API_KEY";
+
+          // Function to register email address
+          function registerEmail(email) {
+              // Data to be sent with the POST request
+              var data = {
+                  "list_key": "LIST_KEY", // Replace LIST_KEY with the key of your Zoho Campaigns list
+                  "data": {
+                      "Email": email // You can include additional fields here if needed
+                  }
+              };
+
+              // Make a POST request to Zoho Campaigns API
+              var xhr = new XMLHttpRequest();
+              xhr.open("POST", apiUrl);
+              xhr.setRequestHeader("Authorization", "apikey " + apiKey);
+              xhr.setRequestHeader("Content-Type", "application/json");
+              xhr.onload = function() {
+                  if (xhr.status === 200) {
+                      console.log("Email registered successfully:", xhr.responseText);
+                  } else {
+                      console.error("Error registering email:", xhr.status, xhr.statusText);
+                  }
+              };
+              xhr.onerror = function() {
+                  console.error("Error registering email:", xhr.status, xhr.statusText);
+              };
+              xhr.send(JSON.stringify(data));
+          }
+
+          // Handle button click event
+          document.getElementById("newsletter-input-button").addEventListener("click", function() {
+              // Get the email address from the input box
+              var email = document.getElementById("newsletter-input").value;
+
+              // Check if email is not empty
+              if (email.trim() !== "") {
+                  // Register the email address
+                  registerEmail(email);
+              } else {
+                  console.error("Email address cannot be empty.");
+              }
+          });
+      });
     </script></body
   ></html
 >
